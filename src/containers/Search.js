@@ -60,7 +60,7 @@ class Search extends Component {
       <Fragment>
         <form className="w-full py-2 px-1">
           <div className="border-b-4 border-gray-800">
-            <input className="bg-transparent border-none w-full text-gray-800 placeholder-gray-800 text-4xl font-extrabold focus:outline-none border-" type="text" placeholder="Click here to search your country" value={ this.state.search ?? "" } onChange={ this.searchHandler } />
+            <input className="bg-transparent border-none w-full text-gray-800 placeholder-gray-800 text-4xl font-extrabold focus:outline-none border-" type="text" placeholder="Search your country" value={ this.state.search ?? "" } onChange={ this.searchHandler } />
           </div>
         </form>
 
