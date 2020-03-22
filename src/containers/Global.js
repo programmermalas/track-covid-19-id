@@ -5,10 +5,10 @@ import Card from '../components/Card';
 
 class Indonesia extends Component {
   state = {
-    cases: null,
-    confirmend: null,
-    recovered: null,
-    deaths: null,
+    cases: 0,
+    confirmend: 0,
+    recovered: 0,
+    deaths: 0,
     lastUpdate: null,
     months: [
       'January',
@@ -55,15 +55,15 @@ class Indonesia extends Component {
         <h1 className="text-4xl font-extrabold text-gray-800">Global</h1>
 
         <div className="flex flex-wrap items-center justify-center">
-          <Card count={ this.state.cases } title={ "Cases" } updated={ this.state.lastUpdate } />
+          <Card count={ Number(this.state.cases).toLocaleString() } title={ "Cases" } updated={ this.state.lastUpdate } />
 
-          <Card count={ this.state.recovered } title={ "Recovered" } updated={ this.state.lastUpdate }>
+          <Card count={ Number(this.state.recovered).toLocaleString() } title={ "Recovered" } updated={ this.state.lastUpdate }>
             <span className="bg-teal-600 text-gray-200 px-2 rounded-full text-sm">
               { ( this.state.recovered / this.state.cases * 100 ).toFixed( 1 ) }% Recovery Rate
             </span>
           </Card>
 
-          <Card count={ this.state.deaths } title={ "Deaths" } updated={ this.state.lastUpdate }>
+          <Card count={ Number(this.state.deaths).toLocaleString() } title={ "Deaths" } updated={ this.state.lastUpdate }>
             <span className="bg-pink-600 text-gray-200 px-2 rounded-full text-sm">
               { ( this.state.deaths / this.state.cases * 100 ).toFixed( 1 ) }% Fatality Rate
             </span>
