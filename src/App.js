@@ -4,6 +4,7 @@ import './assets/css/tailwind.css';
 
 import Global from './containers/Global';
 import Indonesia from './containers/Indonesia';
+import Search from './containers/Search';
 
 class App extends Component {
   render() {
@@ -14,6 +15,8 @@ class App extends Component {
         <Global />
 
         <Indonesia />
+
+        <Search />
       </div>
     );
   };

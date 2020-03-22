@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import Card from '../components/Card';
 
-class Indonesia extends Component {
+class Global extends Component {
   state = {
     cases: 0,
     confirmend: 0,
@@ -32,7 +32,7 @@ class Indonesia extends Component {
       'Thursday',
       'Friday',
       'Saturday'
-    ],
+    ]
   };
 
   componentDidMount() {
@@ -74,4 +74,4 @@ class Indonesia extends Component {
   };
 };
 
-export default Indonesia;
+export default Global;

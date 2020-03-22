@@ -32,7 +32,7 @@ class Indonesia extends Component {
       'Thursday',
       'Friday',
       'Saturday'
-    ],
+    ]
   };
 
   componentDidMount() {
