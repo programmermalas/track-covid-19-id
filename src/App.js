@@ -2,19 +2,18 @@ import React, { Component } from 'react';
 
 import './assets/css/tailwind.css';
 
+import Global from './containers/Global';
 import Indonesia from './containers/Indonesia';
 
 class App extends Component {
   render() {
     return(
-      <div className="App">
-        <div className="container mx-auto">
-          <h1 className="text-4xl font-extrabold text-pink-800">Covid 19</h1>
+      <div className="container mx-auto">
+        <h1 className="text-4xl font-extrabold text-pink-800">Covid 19</h1>
 
-          <h1 className="text-4xl font-extrabold text-gray-800">Global ( Work in progress )</h1>
+        <Global />
 
-          <Indonesia />
-        </div>
+        <Indonesia />
       </div>
     );
   };

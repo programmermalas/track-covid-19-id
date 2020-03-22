@@ -36,7 +36,7 @@ class Indonesia extends Component {
   };
 
   componentDidMount() {
-    axios.get('https://covid19.mathdro.id/api/countries/indonesia')
+    axios.get('https://covid19.mathdro.id/api')
       .then( ( { data } ) => {
         const cases = data.confirmed.value;
         const recovered = data.recovered.value;
@@ -52,7 +52,7 @@ class Indonesia extends Component {
   render() {
     return(
       <Fragment>
-        <h1 className="text-4xl font-extrabold text-gray-800">Indonesia</h1>
+        <h1 className="text-4xl font-extrabold text-gray-800">Global</h1>
 
         <div className="flex flex-wrap items-center justify-center">
           <Card count={ this.state.cases } title={ "Cases" } updated={ this.state.lastUpdate } />
